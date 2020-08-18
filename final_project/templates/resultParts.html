@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container card" style="padding: 1%">
+        <table class="table table-bordered" id="words">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>1st Resource</th>
+                    <th>Quantity</th>
+                    <th>2nd Resource</th>
+                    <th>Quantity</th>
+                    <th>3rd Resource</th>
+                    <th>Quantity</th>
+                    <th>4th Resource</th>
+                    <th>Quantity</th>
+                    <th>Credit Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in rows %}
+                <tr class="table-light">
+                    <td>{{ r[0] }}</td>
+                    <td>{{ r[1] }}</td>
+                    <td>{{ r[2] }}</td>
+                    <td>{{ r[3] }}</td>
+                    <td>{{ r[4] }}</td>
+                    <td>{{ r[5] }}</td>
+                    <td>{{ r[6] }}</td>
+                    <td>{{ r[7] }}</td>
+                    <td>{{ r[8] }}</td>
+                    <td>{{ r[11] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

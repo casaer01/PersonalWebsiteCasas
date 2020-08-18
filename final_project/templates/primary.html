@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container card" style="padding: 1%">
+    <div class="alert alert-info">
+        Look at Primary weapon requirments
+    </div>
+    <form action="/" method="POST">
+        <div class="row">
+            <div class="col">
+                <select class="form-control" name="primary">
+                    {% for o in options %}
+                    <option value="{{o[0]}}">{{o[0]}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col">
+                <input type="submit" class="btn" value="Get Primary Info!">
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

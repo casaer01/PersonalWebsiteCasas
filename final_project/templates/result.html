@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container card" style="padding: 1%">
+        <table class="table table-bordered" id="words">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Weapon Type</th>
+                    <th>Damage</th>
+                    <th>Critical Chance</th>
+                    <th>Critical Damage</th>
+                    <th>Status Chance</th>
+                    <th>Projectile Type</th>
+                    <th>Fire rate</th>
+                    <th>Magazine Size</th>
+                    <th>Reload Time</th>
+                    <th>Mastery Rank</th>
+                    <th>Disposition</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in rows %}
+                <tr class="table-light">
+                    <td>{{ r[0] }}</td>
+                    <td>{{ r[1] }}</td>
+                    <td>{{ r[2] }}</td>
+                    <td>{{ r[3] }}</td>
+                    <td>{{ r[4] }}</td>
+                    <td>{{ r[5] }}</td>
+                    <td>{{ r[6] }}</td>
+                    <td>{{ r[7] }}</td>
+                    <td>{{ r[8] }}</td>
+                    <td>{{ r[9] }}</td>
+                    <td>{{ r[10] }}</td>
+                    <td>{{ r[11] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

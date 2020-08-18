@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-body text-center">
+                <p class="card-text">Look up the status of a Primary weapon</p>
+                <p class="card-text">
+                    <a href="/primary" class="btn btn-lg btn-info">Find Primary</a>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body text-center">
+                <p class="card-text">Look up the cost of the blueprint and requirements</p>
+                <p class="card-text">
+                    <a href="/blueprint" class="btn btn-lg btn-success">Find Blueprint</a>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body text-center">
+                <p class="card-text">Look up the resources and quantity needed to build the primary weapon</p>
+                <p class="card-text">
+                    <a href="/parts" class="btn btn-lg btn-primary">Find Parts</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
