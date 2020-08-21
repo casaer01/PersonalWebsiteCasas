@@ -4,16 +4,38 @@
         <link rel="stylesheet" href="static/css/style.css">
         <link rel="shortcut icon" href="#" />
     </head>
-    <div id="mySidenav" class="sidenav">
+    <!-- <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/">Home</a>
         <a href="/primary">Primary infomation</a>
         <a href="/blueprint">Blueprint infomation</a>
         <a href="/parts">Resource to build</a>
     </div>
-    <button id="sidebutton" type="button" class="btn btn-light" onclick="openNav()">open</button>
+    <button id="sidebutton" type="button" class="btn btn-light" onclick="openNav()">open</button> -->
 
-    <body style="padding-top:3%">
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4" style="background-color: #e3f2fd;">
+            <ul class="navbar-nav navbar-expand-lg mr-auto">
+                <li class="nav-item active">
+                    <a id="navitems" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="navitems" class="nav-link" href="#">Contact me</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-light" style="background-color: #cdeaff;">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+
+
+    <body id="blockContent">
+
         {% block content %}
         {% endblock %}
 
