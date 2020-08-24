@@ -4,6 +4,8 @@
         <link rel="stylesheet" href="static/css/style.css">
         <link rel="shortcut icon" href="#" />
     </head>
+
+    <body id="blockContent">
     <!-- <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/">Home</a>
@@ -13,28 +15,28 @@
     </div>
     <button id="sidebutton" type="button" class="btn btn-light" onclick="openNav()">open</button> -->
 
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="p-4" style="background-color: #e3f2fd;">
-            <ul class="navbar-nav navbar-expand-lg mr-auto">
-                <li class="nav-item active">
-                    <a id="navitems" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a id="navitems" class="nav-link" href="#">Contact me</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-        <nav class="navbar navbar-light" style="background-color: #cdeaff;">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-      </div>
+    <nav id="topNavbar" class="navbar bg-dark navbar-dark animate slideIn" style="margin-bottom:16px">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler collapsed " type="button" data-toggle="collapse" data-target="#x" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse animate slideIn" id="x" style="">
+        <ul class="nav navbar-nav" style="visibility: visible;">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>    
+        </ul>
+      </div>  
+    </nav>
 
 
-    <body id="blockContent">
+    
 
         {% block content %}
         {% endblock %}

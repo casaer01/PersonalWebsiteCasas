@@ -9,6 +9,10 @@ body {
     background-size: 100%;
 }
 
+#topNavbar {
+    border-radius: 10px;
+}
+
 #navitems {
     margin: 0 15px 0 15px;
 }
