@@ -8,6 +8,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
@@ -33,6 +34,7 @@ body {
     background-color: white;
     border-radius: 15px;
     padding: 20px;
+    line-height: 1.6;
 }
 
 #carouselDiv{
@@ -49,6 +51,17 @@ body {
     border-radius: 15px 15px 15px 15px;
     padding: 1% 1% 0 1%;
     margin: 0px 10px 0 10px;
+}
+
+#contactInfo{
+    border: 2px solid grey;
+    border-radius: 15px;
+    background-color: rgb(214, 214, 214);
+    padding: 20px;
+}
+
+.row{
+    min-height: 200px;
 }
 
 /* #leftintro{
@@ -103,7 +116,9 @@ body {
     padding: 20px;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+img{
+    border: 3px solid #818181;
+    border-radius: 70px;
+    /* padding: 25px; */
+    margin: 10px;
 }
