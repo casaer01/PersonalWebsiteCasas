@@ -60,6 +60,10 @@ body {
     padding: 20px;
 }
 
+#copyEmail{
+    text-align: center;
+}
+
 .row{
     min-height: 200px;
 }
@@ -119,6 +123,6 @@ body {
 img{
     border: 3px solid #818181;
     border-radius: 70px;
-    /* padding: 25px; */
+    padding: 25px;
     margin: 10px;
 }

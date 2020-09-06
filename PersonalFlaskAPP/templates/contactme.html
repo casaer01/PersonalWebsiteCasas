@@ -2,10 +2,16 @@
 
 {% block content %}
 
+
 <div class="row">
-    <p class="col-2" ></p>
-    <p id="contactInfo" class="col align-self-center text-center"> I can be best contacted at ecasas182015@gmail.com</p>
-    <p class="col-2"></p>
+    <div class="col-1"></div>
+    <div id=contactInfo class="col align-self-center"> 
+        <p class="align-self-center text-center">The best way to contact me is by emailing me at </p>
+        <div id="copyEmail">
+            <input type="text" id="emailValue" value="ecasas182015@gmail.com"> <button onclick="copyemailfunc('emailValue')" type="button" class="btn btn-outline-primary">Copy</button>
+        </div> 
+    </div>
+    <div class="col-1"></div>
 </div>
 
 {% endblock %}

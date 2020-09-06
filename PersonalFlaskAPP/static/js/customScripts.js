@@ -1,10 +1,11 @@
-// OpenNav & CloseNav opens and closes the sidebar
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "15%";
-    }
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    }
+function copyemailfunc(inputfield) {
+    /* Get the text field */
+    var copyText = document.getElementById(inputfield);
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  } 
