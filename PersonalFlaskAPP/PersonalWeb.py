@@ -23,10 +23,8 @@ def contactme():
     
 @app.route('/downloads')
 def download_file():
-	#path = "html2pdf.pdf"
-	#path = "info.xlsx"
 	path = "templates/ErosCasas_Resume.pdf"
-	#path = "sample.txt"
+
 	return send_file(path, as_attachment=True)
 
 if __name__ == '__main__':

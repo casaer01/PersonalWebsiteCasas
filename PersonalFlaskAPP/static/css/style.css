@@ -1,11 +1,7 @@
 html {
-    /* background: linear-gradient(0deg, rgb(132, 154, 255) 0%, rgb(179, 240, 255) 100%) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;  */
+    background: rgb(195,225,255);
+    background: radial-gradient(circle, rgba(195,225,255,0) 14%, rgba(195,219,255,0.6908964269301471) 86%, rgba(154,211,212,1) 100%); 
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
