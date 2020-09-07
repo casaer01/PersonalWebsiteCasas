@@ -33,6 +33,14 @@ body {
     line-height: 1.6;
 }
 
+#overrallBox{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 1%;
+    margin: 1%;
+    background: rgba(1,1,1,0.1);
+}
+
 #carouselDiv{
     padding: 1% 0 0 0;
 }
@@ -43,7 +51,7 @@ body {
 
 #introBox{
     border: 2px solid grey;
-    background-color: rgb(221, 221, 221);
+    background-color: rgba(221, 221, 221,0.4);
     border-radius: 15px 15px 15px 15px;
     padding: 1% 1% 0 1%;
     margin: 0px 10px 0 10px;
@@ -52,7 +60,7 @@ body {
 #contactInfo{
     border: 2px solid grey;
     border-radius: 15px;
-    background-color: rgb(214, 214, 214);
+    background-color: rgba(214, 214, 214,0.4);
     padding: 20px;
 }
 
