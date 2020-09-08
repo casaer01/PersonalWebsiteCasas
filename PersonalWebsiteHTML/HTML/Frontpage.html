@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/bootstrap.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="shortcut icon" href="#" />
+    </head>
+
+    <body id="blockContent">
+
+    <nav id="topNavbar" class="navbar bg-light navbar-light animate slideIn" style="margin-bottom:16px">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Eros Casas</a>
+      </div>
+      <a class="navbar-brand glyphicon glyphicon-home" href="#"></a>
+
+      <!-- hamburger button & script -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#x" aria-expanded="false" style="padding: 10px 18px 10px 20px;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- togglable menu -->
+      <div class="navbar-collapse collapse animate slideIn" id="x" >
+        <ul class="nav navbar-nav" style="visibility: visible;">
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/Frontpage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/aboutme.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/contactme.html">Contact me</a>
+          </li>
+        </ul>
+      </div>  
+    </nav>
+
+<!-- content starts here -->
+    
+<!-- Button trigger modal -->
+<div class="text-center">
+  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">
+      Welcome!
+  </button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Welcome</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              Each icon will take you to a different website thats related to the icon. 
+              The Indeed icon will take you to my indeed profile, the github profile will redirect you to my github profile with projects on display, and the resume icon will let you download my resume onto your computer.
+              
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div id="overrallBox">
+  <div class="row" >
+      <h1 class="col align-self-start text-center">
+          <a href="https://github.com/casaer01">
+              <img src="../Images/GitHub_Logo.png" height="200px" >
+          </a>
+      </h1>
+      <h1 class="col align-self-center text-center">
+          <a href="https://my.indeed.com/p/erosc-6txx4nv">
+              <img src="../Images/indeedLogo.jpeg" height="200px" >
+          </a>
+      </h1>
+  </div>
+
+  <div class="row">
+      <h1 class="col align-self-center text-center">
+          <a href="{{ url_for('download_file') }}">
+              <img src="../Images/resumeIcon.png" height="200px" >
+          </a>
+      </h1>  
+  </div>
+</div>
+
+<!-- content ends here -->
+
+      <script src="../JS/jquery-3.2.1.slim.min.js"></script>
+      <script src="../JS/popper.min.js"></script>
+      <script src="../JS/bootstrap.bundle.js"></script>
+      <script src="../JS/customScripts.js"></script>
+
+  </body>
+</html>

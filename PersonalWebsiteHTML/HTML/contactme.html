@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/bootstrap.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="shortcut icon" href="#" />
+    </head>
+
+    <body id="blockContent">
+
+    <nav id="topNavbar" class="navbar bg-light navbar-light animate slideIn" style="margin-bottom:16px">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Eros Casas</a>
+        </div>
+        <a class="navbar-brand glyphicon glyphicon-home" href="#"></a>
+
+      <!-- hamburger button & script -->
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#x" aria-expanded="false" style="padding: 10px 18px 10px 20px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <!-- togglable menu -->
+        <div class="navbar-collapse collapse animate slideIn" id="x" >
+            <ul class="nav navbar-nav" style="visibility: visible;">
+                <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact me</a>
+            </li>
+            </ul>
+        </div>  
+    </nav>
+
+    <div class="row">
+        <div class="col-1"></div>
+
+        <div id=contactInfo class="col align-self-center"> 
+            <p class="align-self-center text-center">The best way to contact me is by emailing me at </p>
+            <div id="copyEmail">
+                <input type="text" id="emailValue" value="ecasas182015@gmail.com"> <button onclick="copyemailfunc('emailValue')" type="button" class="btn btn-outline-primary">Copy</button>
+            </div> 
+            <p class="align-self-center text-center" > I will reply back to emails within 24 hours</p>
+        </div>
+        
+        <div class="col-1"></div>
+    </div>
+
+        <script src="../JS/jquery-3.2.1.slim.min.js"></script>
+        <script src="../JS/popper.min.js"></script>
+        <script src="../JS/bootstrap.bundle.js"></script>
+        <script src="../JS/customScripts.js"></script>
+
+    </body>
+</html>
